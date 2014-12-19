@@ -14,7 +14,7 @@ filename = 'test.avi'
 
 def print_error():
   print("Usage: %s -f test_video" % sys.argv[0])
-  print("    -e : File of test video")
+  print("    -f : File of test video")
   sys.exit(1)
   
 
