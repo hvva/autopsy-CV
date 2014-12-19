@@ -71,12 +71,12 @@ if not os.path.isdir(dirname):
 # 2. Save Screen Shot to Directory
 filter = 'scene'
 format = 'jpg'
-rate = 5
+rate = 5                          # play This defines the playback speed (nominal speed is 1.0).
 vout = 'dummy'
-prefix = 'img_'
+prefix = 'extract_'
 ratio = 200
 
-cmmd = str('vlc ' + filename + ' --video-filter=scene --scene-format=jpg --rate=5 --vout=dummy --scene-prefix=extract --scene-ratio=200 --scene-path=' + dirname)
+cmmd = str('vlc ' + filename + ' --video-filter=scene --scene-format=jpg --rate=5 --vout=dummy --scene-prefix=extract_ --scene-ratio=200 --scene-path=' + dirname)
 os.system(cmmd)
 
 
